@@ -24,7 +24,7 @@ namespace zad_2
             if (fast == null)
                 Console.WriteLine($"The middles are: {middleHelper.Value} and {slow.Value}");
             else
-                Console.WriteLine($"The middle is {slow.Value}");
+                Console.WriteLine($"The middle is: {slow.Value}");
             return slow;
         }
     }

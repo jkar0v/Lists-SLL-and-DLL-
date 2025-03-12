@@ -10,12 +10,12 @@ namespace zad_2
     {
         internal SinglyNode<T> Head { get; set; }
         internal SinglyNode<T> Tail { get; set; }
-        private int count;
+        internal int Count { get; set; }
         public SinglyLinkedList()
         {
             Head = null;
             Tail = null;
-            count = 0;
+            Count = 0;
         }
         public void AddFirst(T value)
         {
@@ -30,7 +30,7 @@ namespace zad_2
                 newNode.Next = Head;
                 Head = newNode;
             }
-            count++;
+            Count++;
         }
         public void AddLast(T value)
         {
@@ -45,7 +45,7 @@ namespace zad_2
                 Tail.Next = newNode;
                 Tail = newNode;
             }
-            count++;
+            Count++;
         }
         public void Print()
         {

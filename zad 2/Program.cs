@@ -12,6 +12,7 @@
             list.AddLast(5);
             list.AddLast(6);
             list.Print();
+            Console.WriteLine($"The number of elements is: {list.Count}");
             SinglyNode<int> middle = MiddleFinder<int>.FindMiddle(list.Head);
             Console.WriteLine("The middle you want me to return: " + middle.Value);
         }
