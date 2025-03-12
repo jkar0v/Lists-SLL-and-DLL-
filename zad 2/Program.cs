@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            SinglyLinkedList<int> list = new SinglyLinkedList<int>();
+            list.AddFirst(1);
+            list.AddFirst(2);
+            list.AddFirst(3);
+            list.AddLast(4);
+            list.AddLast(5);
+            list.AddLast(6);
+            list.Print();
+            SinglyNode<int> middle = MiddleFinder<int>.FindMiddle(list.Head);
+            Console.WriteLine("The middle you want me to return: " + middle.Value);
         }
     }
 }
